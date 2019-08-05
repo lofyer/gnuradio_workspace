@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sun Jun  2 07:02:22 2019
+# Generated: Mon Aug  5 21:59:16 2019
 ##################################################
 
 if __name__ == '__main__':
@@ -117,16 +117,16 @@ class top_block(grc_wxgui.top_block_gui):
 
     def set_samp_rate_rtlsdr(self, samp_rate_rtlsdr):
         self.samp_rate_rtlsdr = samp_rate_rtlsdr
-        self.osmosdr_source_0.set_sample_rate(self.samp_rate_rtlsdr)
         self.wxgui_fftsink2_1.set_sample_rate(self.samp_rate_rtlsdr)
+        self.osmosdr_source_0.set_sample_rate(self.samp_rate_rtlsdr)
 
     def get_samp_rate_hackrf(self):
         return self.samp_rate_hackrf
 
     def set_samp_rate_hackrf(self, samp_rate_hackrf):
         self.samp_rate_hackrf = samp_rate_hackrf
-        self.osmosdr_source_1.set_sample_rate(self.samp_rate_hackrf)
         self.wxgui_fftsink2_0.set_sample_rate(self.samp_rate_hackrf)
+        self.osmosdr_source_1.set_sample_rate(self.samp_rate_hackrf)
 
     def get_samp_rate_all(self):
         return self.samp_rate_all
